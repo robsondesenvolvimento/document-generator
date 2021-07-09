@@ -21,6 +21,11 @@ const config = {
       }
     ]
   },
+  devServer: {
+    port: 4000,
+    open: true,
+    hot: true
+  },
   resolve: {
     extensions: [
       '.tsx',

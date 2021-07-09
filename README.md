@@ -9,7 +9,14 @@ Requisitos necessários para a execução/desenvolvimento do projeto.
 
 ## Desenvolvendo
 - Passos necessários para desenvolver o projeto - clonagem, scripts necessários, utilização de dependências externas devem ser sinalizados aqui.
+
+### Usando npm
 - npm install
+- npm run start:dev
+
+### Usando yarn
+- yarn install
+- yarn start:dev
 
 
 ## Documentação
