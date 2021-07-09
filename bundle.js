@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.getElementById("app"),n=document.createElement("div");n.innerHTML="<h1>Document Generator</h1>",null==e||e.appendChild(n)})();
