@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 const config = {
   entry: './src/index.ts',
@@ -35,8 +35,10 @@ const config = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'public/index.html'
+    new CopyPlugin({
+      patterns: [
+        { from: "public" }
+      ],
     })
   ]
 };
