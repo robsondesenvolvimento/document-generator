@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   entry: './src/index.ts',
@@ -32,7 +33,12 @@ const config = {
       '.ts',
       '.js'
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'public/index.html'
+    })
+  ]
 };
 
 module.exports = config;
