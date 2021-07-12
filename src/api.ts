@@ -16,6 +16,11 @@ class ApiDocumentGenerator {
         return await axios.get<string[]>(`${this.urlApi}/cpf/createlist`)
         .then(response => response.data);
     }
+
+    async cpfIsValid(cpf: string) {
+        return await axios.get<string[]>(`${this.urlApi}/cpf/isvalid/${cpf}`)
+        .then(response => response.data);
+    }
 }
 
 export default ApiDocumentGenerator
