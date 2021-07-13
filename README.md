@@ -1,5 +1,7 @@
 # Document Generator
 - Projeto de apresentação dos conhecimentos de JavaScript/TypeScript para o curso de pós-graduação JavaScript na UP
+- Este projeto faz requisição a uma api para listar documentos de CNH ou CPF que são criados dinamicamente e para validar documentos.
+- Informações sobre os recursos da api no repositório do Github https://github.com/robsondesenvolvimento/document-generator-api
 - Acesse a página por https://documentgenerator.robsonalves.net.br/ ou https://robsondesenvolvimento.github.io/document-generator/
 
 
@@ -13,15 +15,19 @@ Requisitos necessários para a execução/desenvolvimento do projeto.
 
 ### Usando npm
 - npm install
-- npm run start:dev
+- npm run start-dev
 
 ### Usando yarn
 - yarn install
-- yarn start:dev
+- yarn start-dev
 
 
 ## Documentação
-- Qualquer documentação necessária - wikis, APIs, boards - devem ser colocados aqui.
+- O projeto foi desenvolvido usando javascript/node na pasta js e também usando typescript para a parte de front-end
+- Para testar usando o node digite o seguinte comando
+- node js/index.js
+- Para testar exibindo informações no browser digite o seguinte comando.
+- npm run start-prod ou yarn start-prod
 
 
 ## Aluno

@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-class ApiDocumentGenerator {
+class ApiDocumentGeneratorCpf {
 
     constructor(){
         this.urlApi = "https://robsonalves-net-br-document-generator-srvapp.azurewebsites.net/api/";
@@ -15,6 +15,11 @@ class ApiDocumentGenerator {
         return await axios.get(`${this.urlApi}/cpf/createlist`)
         .then(response => response.data);
     }
+
+    async cpfIsValid(cpf) {
+        return await axios.get(`${this.urlApi}/cpf/isvalid/${cpf}`)
+        .then(response => response.data);
+    }
 }
 
-module.exports = ApiDocumentGenerator
+module.exports = ApiDocumentGeneratorCpf

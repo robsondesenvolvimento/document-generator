@@ -1,6 +1,6 @@
 import axios from "axios";
 
-class ApiDocumentGenerator {
+class ApiDocumentGeneratorCpf {
     private urlApi:string;
 
     constructor(){
@@ -23,4 +23,4 @@ class ApiDocumentGenerator {
     }
 }
 
-export default ApiDocumentGenerator
+export default ApiDocumentGeneratorCpf

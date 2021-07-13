@@ -1,15 +1,29 @@
-const ApiDocumentGenerator = require('./api');
+const ApiDocumentGeneratorCpf = require('./apicpf');
+const ApiDocumentGeneratorCnh = require('./apicnh');
 
-const api = new ApiDocumentGenerator();
+const apiCpf = new ApiDocumentGeneratorCpf();
+const apiCnh = new ApiDocumentGeneratorCnh();
 
-api.cpfCreate().then(data => {
+apiCpf.cpfCreate().then(data => {
     console.log("Criado CPF.")
     console.log(data);
 })
 
-api.cpfCreateList().then(data => {
+apiCpf.cpfCreateList().then(data => {
     console.log("Criada lista de CPF.");
-    data.forEach(element => {
-        console.log(element);
-    })
+    //data.forEach(element => {
+        console.log(data);
+    //})
+});
+
+apiCnh.cnhCreate().then(data => {
+    console.log("Criado CNH.")
+    console.log(data);
+})
+
+apiCnh.cnhCreateList().then(data => {
+    console.log("Criada lista de CNH.");
+    //data.forEach(element => {
+        console.log(data);
+    //})
 });
